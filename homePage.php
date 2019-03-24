@@ -43,27 +43,16 @@ session_start();
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-        <p> trying out git hub </p>
+        
        <?php
         
         if(!empty($_SESSION)){
             echo "<html> <div id='message'> </html>";
-             echo "Hey " . $_SESSION['username'] ."!". '<br>';
+             echo "Hey " . $_SESSION['firstName'] ."!". '<br>';
              echo "<br>";
-            echo "<div id='image'>";
-        echo "<img src=' ";
-         echo $_SESSION['profilePic'];
-             echo " ' alt='picture' height=200px width=200px/>";
-          echo "</div>";
-    
-        echo "<br>";
-            
-    
-     echo "Thank You for Supporting us!";
-     echo "<br>";
-      
-        echo "Your colour is: " . $_SESSION['colour'] . '<br>';
-        echo "Your fav animal is: " . $_SESSION['animal'] . '<br>';
+        
+     
+        
        
      
        echo '<ul class="nav navbar-nav navbar">';

@@ -17,15 +17,15 @@ session_start();
         
         
         <?php
-            $_SESSION["firstName"] ='firstName';
-            $_SESSION["lastName"] = 'lastName';
-            $_SESSION["email"] = 'email';
+            $_SESSION["firstName"] =$_POST['firstName'];
+            $_SESSION["lastName"] = $_POST['lastName'];
+            $_SESSION["email"] = $_POST['email'];
             
  
        if(!empty($_SESSION)){
-                   echo "Welcome " . $_SESSION['firstName'] . '<br>';
+                   echo "Welcome " . $_SESSION["firstName"] . '<br>';
                    echo "last name is  " . $_SESSION['lastName'] . '<br>';
-                   echo "email is " . $_SESSION['email'] . '<br>';
+                   echo "email is " . $_SESSION["email"] . '<br>';
                   
        }
         ?>

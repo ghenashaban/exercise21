@@ -32,7 +32,7 @@ session_start();
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <li><<a href="logIn.php"></form>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><<a href="register.php"></form>"><span class="glyphicon glyphicon-log-in"></span> register </a></li>
               
       </ul>
     </div>

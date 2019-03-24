@@ -85,18 +85,18 @@ session_start();
        
         <div class="dontAppear">
             <div class="paddingForm">
-                <form action="loginCode.php" method="post" enctype="multipart/form-data" >
+                <form action="search.php" method="post" enctype="multipart/form-data" >
             <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
             
   <div class="form-group">
-    <label for="username">First Name</label>
+    <label for="firstName">First Name</label>
     <input type="text" class="form-control"   placeholder="Enter first name" name="firstName" autofocus="true">
     <br>
-    <label for="email">Last Name</label>
-    <input type="email" class="form-control"  placeholder="Enter last name" name="lastName">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control"  placeholder="Enter last name" name="lastName">
     <br>
-    <label for="password">email</label>
-    <input type="password" class="form-control"   placeholder="email" name="password">
+    <label for="email">email</label>
+    <input type="email" class="form-control"   placeholder="email" name="email">
     <br>
     <label for="colour"></label>
     <input type="text" class="form-control" placeholder="Fav Colour" name="colour">

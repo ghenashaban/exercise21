@@ -43,7 +43,7 @@ session_start();
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-        
+        <p> trying out git hub </p>
        <?php
         
         if(!empty($_SESSION)){

@@ -64,7 +64,7 @@ session_start();
            
             echo "<html> <div id='message'> </html>";
      echo "Your Name is: " . $_SESSION['username'] . '<br>';
-        echo "Your favourite colour is: " . $_SESSION['colour'] . '<br>';
+        echo "Your address is: " . $_SESSION['address'] . '<br>';
         echo "Your favourite animal is: " . $_SESSION['animal'] . '<br>';
        
        echo"Your profile picture is:";
@@ -98,16 +98,18 @@ session_start();
     <label for="email">email</label>
     <input type="email" class="form-control"   placeholder="email" name="email">
     <br>
-    <label for="colour"></label>
-    <input type="text" class="form-control" placeholder="Fav Colour" name="colour">
+    <label for="Address"></label>
+    <input type="text" class="form-control" placeholder="Address" name="address">
     <br>
-    <label for="animal"></label>
-    <input type="text" class="form-control"  placeholder="Fav Animal" name="animal">
+    <label for="username"></label>
+    <input type="text" class="form-control"  placeholder="username" name="username">
     <br>
-    
+    <label for="password"></label>
+    <input type="text" class="form-control"  placeholder="password" name="password">
+    <br>
   
 
-    <input type="submit" class="form-control button"  value="Log In">
+    <input type="submit" class="form-control button"  value="Register">
     <br>
   </div>
             </div>

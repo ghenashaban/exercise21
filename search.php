@@ -10,12 +10,7 @@ session_start();
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>
-        
-        
-        
-        
-        
+    <body>       
         <?php
             $_SESSION["firstName"] =$_POST['firstName'];
             $_SESSION["lastName"] = $_POST['lastName'];

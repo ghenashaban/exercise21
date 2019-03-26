@@ -85,7 +85,7 @@ session_start();
        
         <div class="dontAppear">
             <div class="paddingForm">
-                <form action="search.php" method="post" enctype="multipart/form-data" >
+                <form action="login.php" method="post" enctype="multipart/form-data" >
             <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
             
   <div class="form-group">

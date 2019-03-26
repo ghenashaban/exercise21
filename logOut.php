@@ -80,24 +80,7 @@ session_start();
         
    
     </div>
-    <div class="col-sm-2 sidenav">
-        <h4> NEWS </h4>
-      <div class="well">
-           <p><a href="https://www.wwf.org.uk/updates/join-our-fight-end-illegal-wildlife-trade" target="_blank">JOIN OUR FIGHT TO END ILLEGAL WILDLIFE TRADE</p> </a>
-      </div>
-      <div class="well">
-          <p><a href="https://www.wwf.org.uk/updates/big-cats-under-threat" target="_blank">BIG CATS UNDER THREAT</p> </a>
-      </div>
-        <div class="well">
-          <p><a href="https://www.wwf.org.uk/updates/weve-lost-95-wild-tigers-last-century" target="_blank">BECOME A TIGER PROTECTOR</p> </a>
-      </div>
-         <div class="well">
-          <p><a href="http://assets.wwf.org.uk/custom/stories/tiger_numbers_2016/" target="_blank">CAN WE DOUBLE TIGERS?</p> </a>
-      </div>
-        <div class="well">
-          <p><a href="https://www.wwf.org.uk/updates/missiontiger" target="_blank">MISSION TIGER: BHUTAN</p> </a>
-      </div>
-    </div>
+    
   </div>
 </div>
 

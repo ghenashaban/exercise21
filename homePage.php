@@ -8,15 +8,16 @@ session_start();
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="ex21.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-        <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
         <link href="ex21.css" rel="stylesheet" type="text/css"/>
-        
+       
+       
     </head>
     <body>
+        <div class="background">
 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -35,6 +36,7 @@ session_start();
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><<a href="register.php"></form>"><span class="glyphicon glyphicon-log-in"></span> register </a></li>
+                          <li><<a href="login.php"></form>"><span class="glyphicon glyphicon-log-in"></span> log in </a></li>
 
                     </ul>
                 </div>
@@ -49,44 +51,41 @@ session_start();
                 <?php
                 if (!empty($_SESSION)) {
                     echo "<html> <div id='message'> </html>";
-                    echo "Hey " . $_SESSION['firstName'] . "!" . '<br>';
+                    echo "Hey " . $_SESSION['username'] . "!" . '<br>';
                     echo "<br>";
                     echo '<ul class="nav navbar-nav navbar">';
                     echo '<li><a href="logOut.php"></form>"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>';
                     echo '</ul>';
                     echo '</div>';
                 } else {
-                    echo "Welcome Guest!";
+                    echo "Welcome!";
                 }
                 ?>
 
               
             </div>
-            <div class="col-sm-8 text-left"> 
-                <div class="form-group">
-                    <label for="username"></label>
-                    <input type="text" class="form-control"  placeholder="username" name="username">
-                    <br>
-                    <label for="password"></label>
-                    <input type="text" class="form-control"  placeholder="password" name="password">
-                    <br>
-                    <input type="submit" class="form-control button"  value="login">
-                    <br>
-                </div>
-                <h4> Don't have an account? please register via the link below</h4>
-                <a href="register.php"></form>register </a>
-            </div>
+          
 
         </div>
     </div>
 
-    <footer class="container-fluid text-center">
-
-
-        <p>Contact information: <a href="https://outlook.live.com/owa/">
-                library@hotmail.co.uk</a></p>
-    </footer>
-
+   
+      
 
 </body>
+<center>
+    
+
+     <footer id="footer">
+         
+         
+        <p>Contact information: <a href="https://outlook.live.com/owa/">
+                library@hotmail.co.uk</a></p> 
+         
+     </footer>
+    </center>
+        
+</div>   
+        
+
 </html>

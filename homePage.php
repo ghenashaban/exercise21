@@ -8,17 +8,14 @@ session_start();
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link href="ex21.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link href="ex21.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
        
        
     </head>
     <body>
-        <div class="background">
-
+      
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -39,15 +36,18 @@ session_start();
                           <li><<a href="login.php"></form>"><span class="glyphicon glyphicon-log-in"></span> log in </a></li>
 
                     </ul>
-                </div>
+               
             </div>
         </nav>
+       
     <center>
+       
+       
         <h1>  ISBN-E Library </h1> </center>
     <div class="container-fluid text-center">    
         <div class="row content">
             <div class="col-sm-2 sidenav">
-
+            
                 <?php
                 if (!empty($_SESSION)) {
                     echo "<html> <div id='message'> </html>";
@@ -68,7 +68,6 @@ session_start();
 
         </div>
     </div>
-
    
       
 
@@ -84,8 +83,9 @@ session_start();
          
      </footer>
     </center>
+
         
-</div>   
+    
         
 
 </html>

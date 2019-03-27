@@ -2,59 +2,62 @@
 // Start the session
 session_start();
 
-            $_SESSION["username"] =$_POST['username'];
-            $_SESSION["password"] = $_POST['password'];
-            
-            
- 
-       if(!empty($_SESSION)){
-                   echo "Welcome " . $_SESSION["username"] . '<br>';
-                  
-                  
-       }
+                   
+       
         
 ?>
 <!DOCTYPE html>
 
 <html>
     <head>
-        <meta charset="UTF-8">             
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js> </script>
-   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-   <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
      
     </head>
     <body>
-        
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-     
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="homePage.php">home</a></li>
-            
-        
-      
-      </ul>
-       
-    
-    </div>
-  </div>
-</nav>
-       
+   
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                          <li><<a href="logOut.php"></form>"><span class="glyphicon glyphicon-log-in"></span> log out </a></li>
+
+                    </ul>
+               
+            </div>
+        </nav>
     <center>  
+           <?php
+// Start the session
+
+       $_SESSION["username"] =$_POST['username'];
+            $_SESSION["password"] = $_POST['password'];
+            
+            
+ 
+       if(!empty($_SESSION)){
+                   echo "Welcome " . $_SESSION["username"] . '<br>';
+       }     
+        ?>
           <div class="dropdown">
               Please search for the book using the below categories
+              <br>
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Search
   </button>
@@ -117,6 +120,4 @@ session_start();
 
 
     </body>
-</html>
-
- 
+</html> 

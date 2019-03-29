@@ -59,8 +59,7 @@ session_start();
                     echo "Welcome Guest!";
                 }
                 ?>
-
-              
+ 
             </div>
             <div class="col-sm-8 text-left"> 
                 <div class="form-group">
@@ -76,7 +75,9 @@ session_start();
                 <h4> Don't have an account? please register via the link below</h4>
                 <a href="register.php"></form>register </a>
             </div>
-
+<?php
+echo 'test github';
+          ?>   
         </div>
     </div>
 
